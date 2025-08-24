@@ -1,0 +1,19 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    id: filestream-default
+    paths:
+      - ingest_data/*.log
+
+filebeat.autodiscover:
+  providers:
+    - type: docker
+      hints.enabled: true
+
+processors:
+  - add_docker_metadata: ~
+
+output.logstash:
+  hosts: ["logstash01:5044"]
+  username: "${ELASTIC_USER}"
+  password: "${ELASTIC_PASSWORD}"
