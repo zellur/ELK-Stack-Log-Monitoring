@@ -1,7 +1,5 @@
 # ELK Stack for Log Management
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ## Overview
 
 This project sets up a fully functional ELK (Elasticsearch, Logstash, Kibana, Filebeat, Metricbeat) stack using Docker and Docker Compose. It provides a centralized log management solution for collecting, processing, analyzing, and visualizing logs from various sources.  This is ideal for monitoring applications, troubleshooting issues, and gaining insights into system behavior.
